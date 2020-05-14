@@ -43,6 +43,7 @@
     "sync.pathPrefix": "",
     "sync.quietSync": false,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "terminal.integrated.shell.linux": "/usr/bin/fish",
     "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 13,
     "emmet.includeLanguages": {
@@ -98,5 +99,6 @@
     "[json]": {
       "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "editor.renderWhitespace": "none"
+    "editor.renderWhitespace": "none",
+    "vsonline.accountProvider": "GitHub"
   }
