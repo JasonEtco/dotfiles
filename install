@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-echo "Installing starship"
-curl -fsSL https://starship.rs/install.sh | bash -s -- -y
-
 # echo "Installing vscode extensions"
 # ./.vscode/install-extensions
 
 rm -rf ~/.config
 cp -r ~/workspace/dotfiles/.config ~/.config
+
+CI=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/home/linuxbrew/.linuxbrew/bin/brew bundle
