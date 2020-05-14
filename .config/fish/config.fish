@@ -39,5 +39,7 @@ set -g fish_color_selection 'white'  '--bold'  '--background=brblack'
 set -g fish_color_user brgreen
 set -g fish_color_valid_path --underline
 
+set -g HOMEBREW_NO_ENV_FILTERING 1
+
 # Install Starship
 starship init fish | source

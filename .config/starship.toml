@@ -1,13 +1,22 @@
+prompt_order = [
+  "username",
+  "hostname",
+  "directory",
+  "git_branch",
+  "git_commit",
+  "git_state",
+  "git_status",
+  "cmd_duration",
+  "custom",
+  "line_break",
+  "jobs",
+  "battery",
+  "time",
+  "character",
+]
+
+[character]
+symbol = "❯"
+
 [git_branch]
-symbol = " "
-
-[nodejs]
-symbol = " "
-
-[package]
-symbol = " "
-style = "bold green"
-
-[rust]
-symbol = " "
-
+symbol = ""
