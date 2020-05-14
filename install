@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Installing starship"
-# This currently requires confirmation - that blocks Codespaces from properly installing it.
-# curl -fsSL https://starship.rs/install.sh | bash
+curl -fsSL https://starship.rs/install.sh | bash -s -y
 
 echo "Installing vscode extensions"
 ./.vscode/install-extensions
