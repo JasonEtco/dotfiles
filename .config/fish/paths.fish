@@ -29,6 +29,3 @@ pathadd ~/.cargo/bin
 # Python
 pathadd ~/Library/Python/2.7/bin
 pathadd ~/Library/Python/3.7/bin
-
-# nvm
-set -gx NVM_DIR (brew --prefix nvm)

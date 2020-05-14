@@ -16,9 +16,6 @@ set fish_greeting ""
 # Use legacy fzf keybindings
 set -g FZF_LEGACY_KEYBINDINGS 1
 
-# Use nvm LTS
-nvm use lts/\*
-
 # Fish syntax highlighting
 set -g fish_color_autosuggestion '555'  'brblack'
 set -g fish_color_cancel -r
