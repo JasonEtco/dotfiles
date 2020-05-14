@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Installing starship"
-curl -fsSL https://starship.rs/install.sh | bash -s -y
+curl -fsSL https://starship.rs/install.sh | bash -s -- -y
 
 echo "Installing vscode extensions"
 ./.vscode/install-extensions
