@@ -41,4 +41,3 @@ set -g fish_color_valid_path --underline
 
 # Install Starship
 starship init fish | source
-

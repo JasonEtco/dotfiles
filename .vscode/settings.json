@@ -64,7 +64,7 @@
     "editor.colorDecorators": false,
     "standard.usePackageJson": true,
     "git.autofetch": true,
-    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontFamily": "Fira Code, monospace",
     "terminal.integrated.fontSize": 13,
     "explorer.confirmDragAndDrop": false,
     "javascript.suggestionActions.enabled": false,

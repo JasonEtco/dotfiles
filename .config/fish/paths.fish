@@ -3,6 +3,7 @@ pathadd ~/bin
 
 # brew
 pathadd /usr/local/sbin
+pathadd /home/linuxbrew/.linuxbrew/bin
 
 # python
 # set `python3` as `python`
