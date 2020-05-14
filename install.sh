@@ -5,4 +5,4 @@ echo "Installing brew things"
 brew bundle
 
 echo "Installing vscode extensions"
-~/.vscode/install-extensions
+./.vscode/install-extensions
