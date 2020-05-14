@@ -1,0 +1,24 @@
+[commit]
+	template = ~/.gitmessage
+[core]
+	editor = nvim
+	excludesfile = ~/.gitignore.global
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[fetch]
+	prune = true
+[include]
+	path = .gitconfig.local
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg

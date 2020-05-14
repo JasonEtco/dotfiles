@@ -1,0 +1,13 @@
+[git_branch]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+style = "bold green"
+
+[rust]
+symbol = " "
+
