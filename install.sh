@@ -1,8 +1,7 @@
-echo "Install homebrew"
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh
+#!/usr/bin/env bash
 
-echo "Installing brew things"
-brew bundle
+echo "Installing starship"
+curl -fsSL https://starship.rs/install.sh | bash
 
 echo "Installing vscode extensions"
 ./.vscode/install-extensions
