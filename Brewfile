@@ -1,5 +1,4 @@
 brew "fish"
 brew "starship"
-brew "exa"
 brew "hub"
 cask "font-fira-code"

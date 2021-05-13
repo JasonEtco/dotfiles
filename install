@@ -1,18 +1,12 @@
 #!/usr/bin/env bash
 
-set -x
+set -e
 
-# Currently doesn't work in Codespaces, VSCode Insiders doesn't
-# support the --install-extension flag.
-# echo "==? Installing VSCode extensions"
-# ./.vscode/install-extensions
-
-echo "==> Replacing .config"
-rm -rf ~/.config
-cp -r ~/workspace/dotfiles/.config ~/.config
+echo "==> Adding symlinks .config"
+cp -r --symbolic-link /workspaces/.codespaces/.persistedshare/dotfiles/* ~
 
 echo "==> Installing Homebrew"
-CI=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-echo 'eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> ~/.bashrc
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+CI=1 su -c '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"' vscode
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.profile
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew bundle
