@@ -1,5 +1,3 @@
-source ~/.config/fish/secrets.fish
-
 set fish_greeting
 
 alias reload "exec fish"
