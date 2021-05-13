@@ -2,7 +2,7 @@
 
 set -e
 
-echo "==> Adding symlinks .config"
+echo "==> Adding symlinks"
 cp -r --symbolic-link /workspaces/.codespaces/.persistedshare/dotfiles/* ~
 cp -r --symbolic-link /workspaces/.codespaces/.persistedshare/dotfiles/.config/* ~/.config
 
