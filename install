@@ -3,7 +3,7 @@
 set -e
 
 echo "==> Adding symlinks .config"
-cp -r --symbolic-link /workspaces/.codespaces/.persistedshare/dotfiles/* ~
+cp -r --symbolic-link ./* ~
 
 echo "==> Installing Homebrew"
 CI=1 su -c '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"' vscode
