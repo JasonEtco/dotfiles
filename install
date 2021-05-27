@@ -3,8 +3,11 @@
 set -e
 
 echo "==> Adding symlinks"
-cp -r --symbolic-link /workspaces/.codespaces/.persistedshare/dotfiles/* ~
-cp -r --symbolic-link /workspaces/.codespaces/.persistedshare/dotfiles/.config/* ~/.config
+# This is really hacky, but it works. We create symlinks for the particular files and the `.config` folder.
+# We shouldn't have to use the absolute path for Codespaces, but alas I couldn't get it to work without it.
+cp -r --symbolic-link /workspaces/.codespaces/.persistedshare/dotfiles/* ~ || true
+mkdir ~/.config || true
+cp -r --symbolic-link /workspaces/.codespaces/.persistedshare/dotfiles/.config/* ~/.config || true
 
 echo "==> Installing Homebrew"
 CI=1 su -c '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"' vscode
