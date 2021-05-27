@@ -1,4 +1,6 @@
 set fish_greeting
+set PATH /usr/local/bin $PATH
+set PATH /home/linuxbrew/.linuxbrew/bin $PATH
 
 alias reload "exec fish"
 
