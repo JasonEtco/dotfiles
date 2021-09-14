@@ -14,5 +14,3 @@ CI=1 su -c '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebre
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew bundle
-
-chsh -s /home/linuxbrew/.linuxbrew/bin/fish
