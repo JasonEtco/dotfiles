@@ -2,8 +2,7 @@
 
 set -e
 
-# Symlink things
-ln -s /workspaces/.codespaces/.persistedshare/dotfiles/* ~
+DOTFILES=/workspaces/.codespaces/.persistedshare/dotfiles/
 
 # Install fish
 sudo apt-add-repository ppa:fish-shell/release-3 -y
@@ -15,3 +14,7 @@ sudo apt-get install hub -y
 
 # Install Starship
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --yes
+
+# Copy individual files, because anything else is too finicky to work
+cp $DOTFILES/.config/starship.toml ~/.config/starship.toml
+cp $DOTFILES/.config/fish/config.fish ~/.config/fish/config.fish
