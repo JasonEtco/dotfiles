@@ -17,5 +17,5 @@ sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --yes
 # Copy individual files, because anything else is too finicky to work
 cp $DOTFILES/.config/starship.toml ~/.config/starship.toml
 
-mkdir -p $DOTFILES/.config/fish
+mkdir -p ~/.config/fish
 cp $DOTFILES/.config/fish/config.fish ~/.config/fish/config.fish
