@@ -15,6 +15,7 @@ sudo apt-get install hub -y
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- --yes
 
 # Copy individual files, because anything else is too finicky to work
+mkdir -p ~/.config
 cp $DOTFILES/.config/starship.toml ~/.config/starship.toml
 
 mkdir -p ~/.config/fish
