@@ -13,3 +13,5 @@ alias ghd='script/server --debug'
 
 # Setup Starship
 starship init fish | source
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
