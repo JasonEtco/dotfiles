@@ -22,8 +22,8 @@ mkdir -p ~/.config/fish
 cp $DOTFILES/.config/fish/config.fish ~/.config/fish/config.fish
 
 # Install Monaspace
-gh repo clone githubnext/monaspace /workspaces/monaspace
-cd /workspaces/monaspace/util && ./install_linux.sh
+# gh repo clone githubnext/monaspace /workspaces/monaspace
+# cd /workspaces/monaspace/util && ./install_linux.sh
 
 # Install tparse
 go install github.com/mfridman/tparse@latest
